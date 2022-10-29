@@ -2,7 +2,7 @@
 
 
 # test
-[Demo](https://trenersem.github.io/test_task/)
+[Demo](https://test-task-semenov-volodumur.netlify.app/)
 
 ## Available Scripts
 

@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-DEMO[https://github.com/trenersem/test_task.git]
+
+# test
+[Demo](https://trenersem.github.io/test_task/)
 
 ## Available Scripts
 

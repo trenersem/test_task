@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+@import '../../../styles/breakpoint';
+
+.tooltip {
+  --tooltip-color: black;
+	position: relative;
+
+  &:before {
+    content: attr(data-text);
+		@include flex(row, center, center);
+		@include body();
+		max-width: 240px;
+    width: max-content;
+		text-align: center;
+		padding: 6px 12px;
+    margin-top: 8px;
+		margin-left: 15px;
+    background: black;
+		border-radius: 8px;
+    color: #fff;
+  }
+	
+  &::before,
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    visibility: visible;
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+}

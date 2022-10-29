@@ -1,0 +1,79 @@
+@import './styles/variables';
+@import './styles/mixin';
+@import './styles/breakpoint';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: $background-color;
+  @include body();
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+.app {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.main {
+  @include flex(column, center, center);
+  background-color: $background-color;
+  padding: 0 30px 100px;
+
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.toast-container {
+  .Toastify__toast {
+    min-height: 46px;
+  }
+}

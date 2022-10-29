@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.button {
+  @include flex(row, center, center);
+  width: 100px;
+  height: 34px;
+  padding: 20px 4px;
+  background-color: $primary-color;
+  color: black;
+  border-radius: 80px;
+	border: none;
+  cursor: pointer;
+  transition: width 500ms;
+  outline: none;
+  white-space: nowrap;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+
+  &.disabled {
+    background-color: #b4b4b4;
+    color: white;
+  }
+}

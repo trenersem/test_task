@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+@import '../../styles/breakpoint';
+
+.item {
+  @include flex(column, center, center);
+  padding: 20px;
+  gap: 20px;
+  height: 254px;
+  width: 328px;
+  background-color: white;
+  border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+
+  &_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+  &_info {
+    @include flex(column, center, center);
+  }
+}

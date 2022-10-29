@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+@import '../../styles/breakpoint';
+
+.content {
+  width: 100%;
+  height: 100%;
+  @include flex(column, center, center);
+}
+.form {
+  @include flex(column, center, center);
+  width: 100%;
+  height: 100%;
+  max-width: 380px;
+  gap: 50px;
+}
+
+.inputs {
+  position: relative;
+  @include flex(column, center, center);
+
+  width: 100%;
+  gap: 50px;
+  // margin-bottom: 40px;
+}
+.example {
+  position: absolute;
+  bottom: -22px;
+  left: 15px;
+  color: #7e7e7e;
+  font-size: 12px;
+  line-height: 14px;
+}
+.select {
+  @include flex(column, flex-start, center);
+  width: 100%;
+  gap: 7px;
+  // margin-bottom: 50px;
+
+  &_option {
+    @include flex(row, center, center);
+    cursor: pointer;
+  }
+}
+
+.download {
+  @include flex(row, center, center);
+  max-width: 380px;
+  width: 100%;
+  color: black;
+	cursor: pointer;
+
+  &_button {
+    @include flex(row, center, center);
+    width: 83px;
+    height: 54px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.title {
+  @include heading1();
+  color: black;
+  padding-top: 140px;
+  min-height: 328px;
+  text-align: center;
+}

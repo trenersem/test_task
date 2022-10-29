@@ -1,0 +1,25 @@
+@mixin flex($flex-direction, $aligin-item, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $aligin-item;
+  justify-content: $justify-content;
+}
+
+//Topographic
+@mixin heading1 {
+  font-family: $nunito;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  user-select: none;
+}
+
+@mixin body {
+  font-family: $nunito;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  user-select: none;
+}
